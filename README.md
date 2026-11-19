@@ -1,6 +1,6 @@
 # Teste técnico de QA: Verzel Store
 
-[![Automação Playwright](https://github.com/darkslipx/Teste-qa-verzel/actions/workflows/playwright.yml/badge.svg)](https://github.com/darkslipx/Teste-qa-verzel/actions/workflows/playwright.yml)
+[![Automação Playwright](https://github.com/Abner-Duarte/Teste-qa-verzel/actions/workflows/playwright.yml/badge.svg)](https://github.com/Abner-Duarte/Teste-qa-verzel/actions/workflows/playwright.yml)
 
 Teste da entrega **"Cupom de desconto e frete grátis"** (card VZS-142, versão 2.3.0) da Verzel Store, feito por **Abner Duarte** para a vaga de QA Júnior da Verzel.
 
@@ -70,7 +70,7 @@ Os IDs são os mesmos em todo o repositório. Um caso como `UI-03` aparece com e
 ### Passo a passo
 
 ```bash
-git clone https://github.com/darkslipx/Teste-qa-verzel.git
+git clone https://github.com/Abner-Duarte/Teste-qa-verzel.git
 cd Teste-qa-verzel/automacao
 npm install
 npx playwright install chromium firefox webkit
@@ -121,7 +121,7 @@ A cada push na `main`, o [pipeline](.github/workflows/playwright.yml) instala o 
 1. **Testes das regras corretas** (`--grep-invert @bug`): precisam passar. Se algum falhar, o pipeline fica vermelho, indicando regressão.
 2. **Testes dos bugs conhecidos** (`--grep @bug`): falham hoje de propósito, então rodam com `continue-on-error` e não bloqueiam o pipeline.
 
-Os relatórios HTML das duas etapas ficam disponíveis para download em cada execução, na aba [Actions](https://github.com/darkslipx/Teste-qa-verzel/actions), em "Artifacts". Também é possível rodar manualmente pelo botão "Run workflow".
+Os relatórios HTML das duas etapas ficam disponíveis para download em cada execução, na aba [Actions](https://github.com/Abner-Duarte/Teste-qa-verzel/actions), em "Artifacts". Também é possível rodar manualmente pelo botão "Run workflow".
 
 ## Fora do escopo
 
